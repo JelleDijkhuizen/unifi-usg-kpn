@@ -187,6 +187,15 @@ Determining cause and solutions:
 
     Use your favorite search engine and the links below to read up about possible symptoms, causes and solutions.
 
+## Unify Switch Configuration
+
+IPTV requires changes to the default **USW** IGMP configuration.
+* Disable IGMP header validation
+* Enable IGMP fast leave
+
+Use the steps above, used to deploy the `config.gateway.json` file, to deploy the `config.properties` file, then reprovision the **USW**s
+The configuration is for VLAN 1, update the VLAN ID to the VLAN for IPTV on you network
+
 ### Networking issues
 Possible networking issues:
 * Slow network (latency)
